@@ -24,7 +24,17 @@ export default function Home() {
           Impasti artigianali, ingredienti freschi e tanto amore<br />
           in ogni fetta.
         </p>
-        <Link to="/gallery" className="home__hero-cta">Scopri le nostre pizze</Link>
+        <div className="home__hero-actions">
+          <Link to="/gallery" className="home__hero-cta">Scopri le nostre pizze</Link>
+          <a
+            href="/assets/Menu.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="home__hero-cta home__hero-cta--outline"
+          >
+            📄 Scarica il menu
+          </a>
+        </div>
       </section>
 
       <main className="home__sections">
