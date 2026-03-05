@@ -1,4 +1,4 @@
-import { useState, useRef, TouchEvent } from "react";
+import { useState, useRef, type TouchEvent } from "react";
 
 interface Pizza {
   emoji: string;
@@ -53,7 +53,7 @@ export default function Gallery() {
   const [current, setCurrent] = useState(0);
   const touchStartX = useRef<number | null>(null);
 
-  const go = (idx) => {
+  const go = (idx: number) => {
     const next = (idx + pizze.length) % pizze.length;
     setCurrent(next);
   };
